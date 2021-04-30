@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <parameter name="node" value="param-val-not-found"/>
+  <parameter name="os" value="param-val-not-found"/>
+  <parameter name="browser" value="param-val-not-found"/>
+  <parameter name="url" value="param-val-not-found"/>
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="com.myapp.selenium.GoogleSearchTest">
+        <methods>
+          <include name="googleFeelingLuckyButtonTest"/>
+          <include name="setUp"/>
+          <include name="googleSearchBox"/>
+          <include name="googleTitleTest"/>
+          <include name="googleUrlTest"/>
+          <include name="closeBrowser"/>
+          <include name="googleSearchButtonTest"/>
+        </methods>
+      </class> <!-- com.myapp.selenium.GoogleSearchTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

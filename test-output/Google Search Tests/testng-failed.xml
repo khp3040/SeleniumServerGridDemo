@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Google Search Tests]" parallel="tests">
+  <parameter name="node" value="http://localhost:4444/wd/hub"/>
+  <parameter name="os" value="WIN10"/>
+  <parameter name="url" value="https://www.google.com/"/>
+  <test thread-count="5" name="Tests on Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.myapp.selenium.GoogleSearchTest">
+        <methods>
+          <include name="googleFeelingLuckyButtonTest"/>
+          <include name="setUp"/>
+          <include name="googleSearchBox"/>
+          <include name="googleTitleTest"/>
+          <include name="googleUrlTest"/>
+          <include name="closeBrowser"/>
+          <include name="googleSearchButtonTest"/>
+        </methods>
+      </class> <!-- com.myapp.selenium.GoogleSearchTest -->
+    </classes>
+  </test> <!-- Tests on Chrome(failed) -->
+  <test thread-count="5" name="Tests on Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.myapp.selenium.GoogleSearchTest">
+        <methods>
+          <include name="googleFeelingLuckyButtonTest"/>
+          <include name="setUp"/>
+          <include name="googleSearchBox"/>
+          <include name="googleTitleTest"/>
+          <include name="googleUrlTest"/>
+          <include name="closeBrowser"/>
+          <include name="googleSearchButtonTest"/>
+        </methods>
+      </class> <!-- com.myapp.selenium.GoogleSearchTest -->
+    </classes>
+  </test> <!-- Tests on Firefox(failed) -->
+</suite> <!-- Failed suite [Google Search Tests] -->
